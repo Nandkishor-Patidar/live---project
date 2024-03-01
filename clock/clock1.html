@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .back{
+            background-color:rgb(231, 231, 231) ;
+            width: 1100px;
+            height: 370px;
+            padding: 20px 20px 0 40px;
+            margin: 20px 0 0 80px;
+            border-radius: 5px;
+        }
+        .container{
+            font-size: 30px;
+            border-bottom: 1px solid rgb(193, 193, 193);
+        }
+        .btn{
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+            background-color: rgb(0, 115, 255);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        setInterval(()=>{
+        const a = new Date();
+        date = a.getDate() +'-'+ a.getMonth() +'-'+ a.getFullYear();
+        time = a.getHours() +':'+ a.getMinutes() +':'+ a.getSeconds();
+        document.getElementById('clock').innerHTML = time + '<br>on ' + date;
+    })
+    </script>
+</head>
+<body>
+    <div class="back">
+    <div class="container">
+        <h1>Current Time is: <span id="clock"></span></h1>
+    </div>
+    <p>We are here to show you the time for different countries</p>
+    <button class="btn">Browse Times</button>
+</div>
+</body>
+</html>

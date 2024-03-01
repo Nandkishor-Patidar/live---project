@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <h1>Current Time is: <span id="clock"></span></h1>
+    <script>
+        setInterval(()=>{
+            const x = new Date();
+            date = x.getDate() +' - '+ x.getMonth() + ' - '+ x.getFullYear();
+            time = x.getHours()+' H: '+ x.getMinutes()+' M: '+ x.getSeconds()+' S';
+            document.getElementById('clock').innerHTML=time +' on ' +date;
+        },1000)
+    </script>
+</body>
+</html>
