@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+.watch{
+     font-size: 50px;
+     background-color: black;
+     padding: 20px 24px;
+     border-radius:10px ;
+     font-weight: 600;
+}
+button{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-inline: 12px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+}
