@@ -9,6 +9,9 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+img {
+    max-width: 100%;
+}
 .card{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -43,13 +46,14 @@ body{
     overflow: hidden;
     height: 40px;
     width: 40px;
+
   } 
 .author-info {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
-    width: 100px;
+    width: 120px;
   }
 .author-info small{
    color: #aaa;
@@ -60,8 +64,8 @@ body{
     to right,
     #f6f7f8 0%,
     #edeef1 10%,
-    #f6f7f8 20%,
-    #f6f7f8 100%
+    #f6f7f8 80%,
+    #f6f7f8 100% 
     );
     background-size: 200% 100%;
     animation: bgPos 1s linear infinite;
