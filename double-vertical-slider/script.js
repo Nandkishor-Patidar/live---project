@@ -12,7 +12,6 @@ upButton.addEventListener('click',()=>changeSlide('up'))
 downButton.addEventListener('click',()=>changeSlide('down'))
 
 const changeSlide = (direction)=>{
-    const sliderHeight = sliderContainer.clientHeight
     if(direction === 'up'){
         activeSlideIndex++
         if(activeSlideIndex>slidesLength-1){
@@ -24,6 +23,6 @@ const changeSlide = (direction)=>{
             activeSlideIndex = slidesLength - 1
         }
     }
-    slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
-    slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
+    slideRight.style.transform = `translateY(-${activeSlideIndex * 100}%)`
+    slideLeft.style.transform = `translateY(${activeSlideIndex * 100}%)`
 }
