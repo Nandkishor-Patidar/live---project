@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: steelblue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+a{
+    color: aquamarine;
+}
+button {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+  }
+  .control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+  }
+  .control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+  }
+  .text {
+    margin-top: 30px;
+  }
+  .form label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
