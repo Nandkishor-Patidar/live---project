@@ -37,7 +37,7 @@ function addTodo(todo) {
 function updareLS() {
   todoEl = document.querySelectorAll("li");
   const todos = [];
-  todosEl.forEach((todoEl) => {
+  todoEl.forEach((todoEl) => {
     todos.push({
       text: todoEl.innerText,
       completed: todoEl.classList.contains("completed"),
